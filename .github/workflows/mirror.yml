@@ -1,0 +1,38 @@
+# Copies Trunks' anchor proofs here once a day, and publishes each checkpoint as an immutable release once
+# all its proofs are final. Uses only this repository's own token: Trunks holds no key to this repository.
+name: Mirror
+on:
+  schedule:
+    - cron: "43 */6 * * *"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  mirror:
+    name: copy the proofs
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+      - name: Copy anything new
+        run: node scripts/mirror.mjs
+      - name: Commit what changed
+        run: |
+          git config user.name "trunks-anchors mirror"
+          git config user.email "actions@users.noreply.github.com"
+          git add anchors
+          if git diff --cached --quiet; then
+            echo "Nothing new."
+          else
+            git commit -m "Mirror checkpoints from planttrunks.com/ledger/anchors"
+            git push
+          fi
+      - name: Publish each finished checkpoint as an immutable release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/release.mjs
