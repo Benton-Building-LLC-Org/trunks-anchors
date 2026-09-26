@@ -1,0 +1,10 @@
+fingerprint   9efbf0e0fee9162773e808fca4ff6addb7917a9cf3ed979bc5440fb15f3c40f8
+journal entry 251, covering the first 250
+the head it closes over 3f058a7dc70a7568dd7c135d41ec28912ee950a3937ee0fc284d130fef54bc7f
+taken         2026-09-26T17:54:04.831Z
+checkpoint    01a0deda-3ec0-7435-bc3f-4b200a742cff
+
+witnesses
+  digicert: signed at 2026-09-26T17:54:08.000Z
+  freetsa: signed at 2026-09-26T17:54:08.000Z
+  opentimestamps: Bitcoin block 968727
