@@ -1,0 +1,10 @@
+fingerprint   e48f6931f46ecfa2d94cfa7761e3b5a594419ca5ee67d259fd8f2599950bfd3b
+journal entry 309, covering the first 308
+the head it closes over 8fc7a79c2efef1ec1012c104a193fe22587be40ecbd536eed30912a8e2a3b34d
+taken         2026-10-04T21:26:46.321Z
+checkpoint    01a108cf-3640-741a-8dec-579dc3a873ba
+
+witnesses
+  digicert: signed at 2026-10-04T21:26:50.000Z
+  freetsa: signed at 2026-10-04T21:26:49.000Z
+  opentimestamps: waiting for Bitcoin
