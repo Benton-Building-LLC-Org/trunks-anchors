@@ -1,0 +1,5 @@
+Check these with the witnesses' own tools, not anything Trunks wrote.
+
+ots verify -d 34c416d42acf26f4b8ec735a20410628a0f0b1a6f0be082559f2ed4481491a36 opentimestamps.ots
+openssl ts -verify -digest 34c416d42acf26f4b8ec735a20410628a0f0b1a6f0be082559f2ed4481491a36 -in freetsa.tsr -CAfile freetsa-chain.pem
+openssl ts -verify -digest 34c416d42acf26f4b8ec735a20410628a0f0b1a6f0be082559f2ed4481491a36 -in digicert.tsr -CAfile digicert-chain.pem
