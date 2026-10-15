@@ -7,4 +7,4 @@ checkpoint    01a13b98-9da0-7c45-a4c5-cd42c1d0494a
 witnesses
   digicert: signed at 2026-10-14T18:07:29.000Z
   freetsa: signed at 2026-10-14T18:07:29.000Z
-  opentimestamps: waiting for Bitcoin
+  opentimestamps: Bitcoin block 971450
