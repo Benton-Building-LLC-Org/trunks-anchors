@@ -1,0 +1,10 @@
+fingerprint   263fb74540404107ac7a478bd923ae5c2f10fb9bfa1d624f589a9a34bb85a4e8
+journal entry 522, covering the first 521
+the head it closes over 754208fc8074df6d5ae73a3ceeea5c353505b0a7ac6d8ba5e0026f212f0c02b7
+taken         2026-10-19T00:06:00.000Z
+checkpoint    01a1517a-ba40-7f71-b82c-878b7af98573
+
+witnesses
+  digicert: signed at 2026-10-19T00:06:14.000Z
+  freetsa: signed at 2026-10-19T00:06:13.000Z
+  opentimestamps: Bitcoin block 972081
